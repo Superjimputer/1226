@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    
+    <style>
+        input {
+            padding: 10px 15px;
+            border: 1px solid #aaa;
+        }
+    </style>
+    
+</head>
+
+<body>
+<!--
+<script>
+    
+    console.log("asdf");
+    var a = "word";
+    var b = 123;
+    var c = true;
+    
+    console.log(a);
+    console.log(a+b);
+    
+    var array=["Taipei", "New Taipei", "Taoyuan"];
+    console.log(array);
+    console.log(array[2]);
+    
+    if ("condition"){"Action A"};
+    if ("condition"){"Action A"} else {"Action B"};
+    if ("condition"){"Action A"} else if("Condition B"){"Action B"} else {"Action C"};
+    
+    var score1 = 75;
+    if (score1>=80) {console.log("Good");} else {console.log("Bad");}
+    
+    var score2 = 90;
+    if (score2>=60) {console.log("Good");}
+    else if (score2>=60) {console.log("Bad");}
+    else if (score2<60) {console.log("Fail");}
+    
+    var banana = "green";
+    switch (banana){
+        case "yellow": console.log ("Eatable"); break;
+        case "green": console.log("Raw"); break;
+        case "purple": console.log("Poisonous"); break;
+        default:console.log("No Banana"); break;
+    }
+    
+    function test ()
+        {alert("Hello");}
+    test ();
+    test ();
+
+    </script>
+-->
+    
+<!--    <h1 id="aaa">ABC</h1>-->
+    
+    <form action="" id="myform">
+       
+        <input type="text" id="Test" onchange="go()">
+        <select name="" id="test2">
+            <option value="A">A</option>
+            <option value="B">B</option>
+            <option value="C">C</option>
+            <option value="D">D</option>
+        </select>
+        <input type="Submit" value="Send"> 
+    </form>
+
+    <div id="output"></div>
+    
+<script>
+
+    var t = myform.test2.options[0].value;
+    console.log(t);
+    
+    var t2 = myform.test2.options[1].textContent;
+    console.log(t2);
+    
+    function go() {
+        var test = document.getElementById("Test").value;
+        console.log(test);
+//    alert("Warning");
+        document.getElementById("output").textContent=test;
+    }
+    </script>
+
+   
+</body>
+</html>
